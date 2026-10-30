@@ -3,7 +3,7 @@ const socket = io();
 const params = new URLSearchParams(window.location.search);
 const role = params.get("role");
 
-socket.emmit("joinRole", role);
+socket.emit("joinRole", role);
 
 const canvas = document.getElementById("grid");
 const ctx = canvas.getContext("2d");
@@ -15,11 +15,10 @@ canvas.width = gridSize * cellSize;
 canvas.height = gridSize * cellSize;
 
 canvas.addEventListener("click", (e) => {
-
     const rect = canvas.getBoundingClientRect();
 
     const x = Math.floor((e.clientX - rect.left) / cellSize);
     const y = Math.floor((e.clientY - rect.top) / cellSize);
 
-    socket.emmit("modifyWall", { role, x, y} );
-})
+    socket.emit("modifyWall", { role, x, y });
+});

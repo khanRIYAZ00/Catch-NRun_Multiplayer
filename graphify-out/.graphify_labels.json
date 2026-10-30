@@ -1,0 +1,13 @@
+{
+  "0": "qrcode.js",
+  "1": "server.js",
+  "2": "package.json",
+  "3": "controller.js",
+  "4": "display.js",
+  "5": "game-logic.test.js",
+  "6": "support.js",
+  "7": "dependencies",
+  "8": "qr.js",
+  "9": "movement.js",
+  "10": "walls.js"
+}

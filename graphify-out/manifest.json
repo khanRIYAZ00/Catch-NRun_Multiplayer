@@ -1,0 +1,110 @@
+{
+  "game/collision.js": {
+    "mtime": 1789893944.0317545,
+    "seen": 1789903599.7014482,
+    "ast_hash": "289c6a18bdac95e867c5018f0b16650f",
+    "semantic_hash": ""
+  },
+  "game/gameState.js": {
+    "mtime": 1789898875.4770696,
+    "seen": 1789903599.7014573,
+    "ast_hash": "ee4547e7fe17bd38fab18a81d01f7130",
+    "semantic_hash": ""
+  },
+  "game/logic.js": {
+    "mtime": 1789902452.8474119,
+    "seen": 1789903599.701461,
+    "ast_hash": "21738a1ae6f1cc557a7e5c5f61834743",
+    "semantic_hash": ""
+  },
+  "game/movement.js": {
+    "mtime": 1789895936.4131405,
+    "seen": 1789903599.7014635,
+    "ast_hash": "aa33629016c58f4b1540bae34a406f81",
+    "semantic_hash": ""
+  },
+  "game/walls.js": {
+    "mtime": 1789895936.6601655,
+    "seen": 1789903599.701466,
+    "ast_hash": "5cee3872594258d1b5b0017d58328672",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1789902272.508761,
+    "seen": 1789903599.7014685,
+    "ast_hash": "e1e4e3e0c28bf29161c590c341a9158c",
+    "semantic_hash": ""
+  },
+  "public/controller.js": {
+    "mtime": 1789898875.47307,
+    "seen": 1789903599.7014716,
+    "ast_hash": "3f37f25c7e02b5b8618735a9b0fd6c47",
+    "semantic_hash": ""
+  },
+  "public/display.js": {
+    "mtime": 1789898875.4690702,
+    "seen": 1789903599.7014735,
+    "ast_hash": "69ecaf79f310b4263c02b099d290dae0",
+    "semantic_hash": ""
+  },
+  "public/qr.js": {
+    "mtime": 1789902452.850412,
+    "seen": 1789903599.7014759,
+    "ast_hash": "e1e7f8744e64cd91816247018cf117e6",
+    "semantic_hash": ""
+  },
+  "public/support.js": {
+    "mtime": 1789895937.049205,
+    "seen": 1789903599.7014775,
+    "ast_hash": "7c204deaac9948f621a543aca1be5829",
+    "semantic_hash": ""
+  },
+  "public/vendor/qrcode.browser.js": {
+    "mtime": 1789902320.9753368,
+    "seen": 1789903599.7014794,
+    "ast_hash": "2c8a7bdae6d08c225aeee848e728fa3a",
+    "semantic_hash": ""
+  },
+  "public/vendor/qrcode.bundle.js": {
+    "mtime": 1789902321.1543353,
+    "seen": 1789903599.7014823,
+    "ast_hash": "14e0b3f53c3e8fed796413dca6870ac3",
+    "semantic_hash": ""
+  },
+  "public/vendor/qrcode.js": {
+    "mtime": 1789902376.9609087,
+    "seen": 1789903599.7014844,
+    "ast_hash": "2c8a7bdae6d08c225aeee848e728fa3a",
+    "semantic_hash": ""
+  },
+  "server.js": {
+    "mtime": 1789902452.8484118,
+    "seen": 1789903599.7014863,
+    "ast_hash": "9b89cdc86f56b17c50774c24aed02f7f",
+    "semantic_hash": ""
+  },
+  "tests/game-logic.test.js": {
+    "mtime": 1789902452.8424118,
+    "seen": 1789903599.701488,
+    "ast_hash": "80f68ca9a5994c645f671b4d641bca32",
+    "semantic_hash": ""
+  },
+  "public/controller.html": {
+    "mtime": 1789901333.9680538,
+    "seen": 1789903599.70149,
+    "ast_hash": "c2bd0c4f17e7e9bd3d4062e5a65e4954",
+    "semantic_hash": ""
+  },
+  "public/index.html": {
+    "mtime": 1789902452.8484118,
+    "seen": 1789903599.701492,
+    "ast_hash": "5a44f83a1a2f1e84aeeda6826f29c77c",
+    "semantic_hash": ""
+  },
+  "public/support.html": {
+    "mtime": 1789893944.1317542,
+    "seen": 1789903599.701494,
+    "ast_hash": "f4e29a5cc00e042ae0bd839f88c1a9bf",
+    "semantic_hash": ""
+  }
+}

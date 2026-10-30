@@ -3,21 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <title>Controller</title>
+<!-- Change from 1.5.4 to 1.5.3 -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #111827 40%, #1f2937);
+    color: white;
+    padding: 18px;
+  }
+
+  .controller-shell {
+    width: min(92vw, 440px);
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.32);
+    border-radius: 20px;
+    padding: 20px 18px 22px;
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.45);
+  }
+
+  h2 {
+    margin: 0 0 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  #movePad {
+    display: none;
+    margin-top: 10px;
+  }
+
+  #liveBoardWrap {
+    display: none;
+    margin-top: 18px;
+    justify-content: center;
+  }
+
+  .move-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(70px, 1fr));
+    gap: 12px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .move-grid button {
+    min-height: 72px;
+    font-size: 28px;
+    font-weight: 700;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #38bdf8, #0ea5e9);
+    color: white;
+    box-shadow: 0 10px 16px rgba(14, 165, 233, 0.26);
+    cursor: pointer;
+  }
+
+  .move-grid .up { grid-column: 2; }
+  .left { grid-column: 1; }
+  .right { grid-column: 3; }
+  .down { grid-column: 2; }
+
+  #wallEditor {
+    display: none;
+    margin-top: 18px;
+  }
+
+  #liveBoardWrap {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+  }
+
+  canvas {
+    display: block;
+    margin: 12px auto;
+    background: #0f172a;
+    border: 2px solid rgba(148, 163, 184, 0.35);
+    border-radius: 12px;
+  }
+</style>
 </head>
 
 <body>
+  <div class="controller-shell">
+    <h2 id="role"></h2>
 
-<h2 id="role"></h2>
+    <div id="liveBoardWrap">
+      <canvas id="liveBoard" width="340" height="340"></canvas>
+    </div>
 
-<button onclick="move(0,-1)">UP</button>
-<br>
-<button onclick="move(-1,0)">LEFT</button>
-<button onclick="move(1,0)">RIGHT</button>
-<br>
-<button onclick="move(0,1)">DOWN</button>
+    <div id="movePad">
+      <div class="move-grid">
+        <button class="up" data-move="0,-1">↑</button>
+        <button class="left" data-move="-1,0">←</button>
+        <button class="right" data-move="1,0">→</button>
+        <button class="down" data-move="0,1">↓</button>
+      </div>
+    </div>
 
-<script src="/socket.io/socket.io.js"></script>
-<script src="controller.js"></script>
+    <div id="wallEditor">
+      <p>Tap the grid to place or remove walls</p>
+      <canvas id="wallGrid" width="320" height="320"></canvas>
+    </div>
+  </div>
 
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="controller.js"></script>
 </body>
 </html>
